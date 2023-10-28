@@ -1,0 +1,53 @@
+@import "colors.css";
+
+body{
+  height: 100vh;
+  background-image: url(../img/Chart2-no-planets.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: left top;
+  color: var(--text-color);
+}
+.twins{
+  height: 12.3vh;
+  width: 3.6vw;
+  position: absolute;
+  left: 18.9vw;
+  top: 44.25vh;
+}
+.timber{
+  height: 9.9vh;
+  width: 5.9vw;
+  position: absolute;
+  left: 30.7vw;
+  top: 45.9vh;
+} 
+.hollow{
+  height: 12.5vh;
+  width: 7.6vw;
+  position: absolute;
+  left: 47.7vw;
+  top: 44.5vh;
+} 
+
+.giants{
+  height: 24vh;
+  width: 14.4vw;
+  position: absolute;
+  left: 65.05vw;
+  top: 38.8vh;
+}  
+.bramble{
+  height: 25.3vh;
+  width: 15.5vw;
+  position: absolute;
+  left: 83.15vw;
+  top: 37.25vh;
+} 
+.interloper{
+  height: 19vh;
+  width: 18.7vw;
+  position: absolute;
+  left: 81.3vw;
+  top: 3.4vh;
+}

@@ -1,0 +1,122 @@
+@import 'colors.css';
+
+body{
+  background-color: black;
+  font-family: 'itc_serif_gothicextra_bold';
+  color: var(--text-color);
+  overflow: hidden;
+}
+h1, h2{
+  font-family: 'itc_serif_gothicheavy';
+  margin-bottom: 1vh;
+}
+nav{
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 45% 6% 44%;
+  grid-template-rows: 1fr;
+}
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
+  top: -10vw;
+  transition: top 2s;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 10vw;
+  background-color: rgba(25, 25, 25, 0.337);
+  box-shadow: 0 5px 20px  rgb(22, 22, 22);
+  border-radius: 0 0 40px 40px;
+  padding: 0;
+  gap: 0;
+}
+nav li{
+  list-style-type: none;
+  align-self: center;
+  /* margin-right: 1.5vw; */
+}
+nav ul~ul{
+  width: 20vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+nav img{
+  max-width: 100%;
+  max-height: 100%;
+}
+nav a{
+  max-height: 100%;
+  align-self: center;
+}
+nav ul li img:hover{
+  position: relative;
+  top: 5px;
+}
+nav ul a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+.grip{
+  background-image: url("../img/Outer-wilds-ventures-outline.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 1s;
+}
+.grip-link{
+  display: block;
+  width: 60%;
+  height: 80%;
+}
+nav:hover .grip{
+  background-image: url("../img/Outer-wilds-ventures.png");
+  transition: 2s;
+}
+nav:hover ul{
+  top: 0;
+  transition: top 1s;
+}
+/* .clickable{
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(2px 2px 2px  rgba(255, 255, 255, 0.5));
+}
+.clickable:hover{
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0));
+  filter: drop-shadow(2px 2px 2px  rgba(255, 255, 255, 0));
+} */
+.hover-me{
+  position: absolute;
+  bottom: 0;
+  right: 1vw;
+  width: fit-content;
+  padding: 0.5rem;
+  border: solid var(--line-color);
+  opacity: 30%;
+  border-radius: 20px;
+}
+article{
+  text-align: center;
+  background-color: var(--div-color);
+  width: 70%;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+.invisible{
+  visibility: hidden;
+}
+figure img{
+  max-width: 100%;
+  max-height:100%;
+}
+figure{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.important{
+  color: var(--important-color);
+}
